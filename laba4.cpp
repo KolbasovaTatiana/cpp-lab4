@@ -37,18 +37,20 @@ int main() {
         std::cout << "NO" << std::endl;
     }
     else if (n%4 == 0) {
+        std::cout << "YES" << std::endl;
         std::cout << n/2 << std::endl;
         for (int i1 = 0; i1 < n/2; i1+= 2) {
-            std::cout << gramm[i1] << " " << gramm[n-1-i1];
+            std::cout << gramm[i1] << " " << gramm[n-1-i1] << " ";
         }
         std::cout << std::endl;
         std::cout << n/2 << std::endl;
         for (int i2 = 1; i2 < n/2; i2+= 2) {
-            std::cout << gramm[i2] << " " << gramm[n-1-i2];
+            std::cout << gramm[i2] << " " << gramm[n-1-i2] << " ";
         }
         std::cout << std::endl;    
     }
     else {
+        std::cout << "YES" << std::endl;
         std::cout << ((n-1)/2)+1 << std::endl;
         for (int i3 = 0; i3 < (n-1)/2; i3+=2) {
             std::cout << gramm[i3] << " " << gramm[n-2-i3] << " ";
@@ -58,7 +60,7 @@ int main() {
         
         std::cout << gramm[n-1] << " ";
         for (int i4 = 1; i4 < (n-1)/2; i4+=2) {
-            std::cout << gramm[i4] << " " << gramm[n-2-i4];
+            std::cout << gramm[i4] << " " << gramm[n-2-i4] << " ";
         }
         std::cout << std::endl;
     }
